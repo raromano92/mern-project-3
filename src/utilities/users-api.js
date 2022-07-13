@@ -15,8 +15,8 @@ export function remove(id) {
   return sendRequest(`${BASE_URL}/${id}`, 'DELETE')
 }
 
-export function update(credentials) {
-  return sendRequest(`${BASE_URL}/update`, 'PUT', credentials)
+export function update(id) {
+  return sendRequest(`${BASE_URL}/update/${id}`, 'PATCH', { editCredentials })
 }
 
 export function checkToken() {

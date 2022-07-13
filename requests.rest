@@ -13,16 +13,16 @@ GET http://localhost:3001/api/items
 
 ###
 
-GET http://localhost:3001/api/users/:id
+GET http://localhost:3000/api/users/:id
 Content-Type: application/json
 
 {
-  "_id": "62cdcb57f1732c33c706c2ad"
+  "_id": "62cdf58dd80c6d4eb09c6296"
 }
 
 ###
 
-POST http://localhost:3001/api/users
+POST http://localhost:3000/api/users
 Content-Type: application/json
 
 {
@@ -46,12 +46,6 @@ Content-Type: application/json
 
 ###
 
-PUT http://localhost:3000/api/users/update
+PATCH  http://localhost:3000/api/users/update/62cdf58dd80c6d4eb09c6296
 Content-Type: application/json
-# Authorized: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYyY2M1NTc5YzhjMzE5ZDYzYzc4NThjYiIsIm5hbWUiOiJNZWdhbiIsImVtYWlsIjoibWVnYW5AZ21haWwuY29tIiwiY3JlYXRlZEF0IjoiMjAyMi0wNy0xMVQxNjo1MzoxMy4wMTZaIiwidXBkYXRlZEF0IjoiMjAyMi0wNy0xMVQxNjo1MzoxMy4wMTZaIiwiX192IjowfSwiaWF0IjoxNjU3NTU4NDA0LCJleHAiOjE2NTc2NDQ4MDR9.69hcx2DnabsGrxgh16shRjkPWKvPAEnFAKTutiAEMaU
-
-{
-  "_id": "62c87747c1c54d66cc680e08",
-  "email": "jess@gmail.com"
-}
 

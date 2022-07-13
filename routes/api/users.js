@@ -23,6 +23,6 @@ router.get('/check-token', ensureLoggedIn, usersCtrl.checkToken)
 router.delete('/:id', ensureLoggedIn, usersCtrl.remove)
 
 // User put route for updating
-router.put('/update', usersCtrl.update)
+router.patch('/update/:id', usersCtrl.update)
 
 module.exports = router
